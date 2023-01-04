@@ -18,7 +18,7 @@ template <typename Type, int Row, int Col>
 class basic_matrix {
     
     friend void TEST_BASIC_MATRIX() {
-        basic_matrix<int, 10, 10> m;
+        basic_matrix<int, 10, 10> m(1);
         
         for (int i=0; i<Row; i++) {
             for (int j=0; j<Col; j++)
