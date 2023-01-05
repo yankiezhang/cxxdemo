@@ -27,6 +27,8 @@
 		DE37E3452965C0A300AB5FA4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DE37E34D2965C10500AB5FA4 /* basic_vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basic_vector.hpp; sourceTree = "<group>"; };
 		DE37E34E2965CEF700AB5FA4 /* basic_matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basic_matrix.hpp; sourceTree = "<group>"; };
+		DE37E351296700DA00AB5FA4 /* vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		DE37E3522967058300AB5FA4 /* matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			children = (
 				DE37E34C2965C0C900AB5FA4 /* basic */,
 				DE37E3442965C0A300AB5FA4 /* cxxdemo */,
+				DE37E34F2967007700AB5FA4 /* math */,
 				DE37E3432965C0A300AB5FA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +75,15 @@
 				DE37E34E2965CEF700AB5FA4 /* basic_matrix.hpp */,
 			);
 			path = basic;
+			sourceTree = "<group>";
+		};
+		DE37E34F2967007700AB5FA4 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				DE37E351296700DA00AB5FA4 /* vector.hpp */,
+				DE37E3522967058300AB5FA4 /* matrix.hpp */,
+			);
+			path = math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

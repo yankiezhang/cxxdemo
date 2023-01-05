@@ -7,11 +7,12 @@
 
 #include <iostream>
 
-#include "basic_matrix.hpp"
+#include "matrix.hpp"
+#include "vector.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    zy::TEST_BASIC_MATRIX();
+    zy::TEST_MATRIX();
     std::cout << "Hello, World!\n";
     return 0;
 }
