@@ -9,7 +9,6 @@
 #define matrix_hpp
 
 #include "basic_matrix.hpp"
-#include "vector.hpp"
 
 namespace zy {
 
