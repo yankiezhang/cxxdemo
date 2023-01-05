@@ -48,12 +48,15 @@ public:
         for (int i=0; i<Size; i++) {
             _array[i] += v[i];
         }
+        
+        return *this;
     }
     
     const basic_vector<Type, Size>& operator-=(const basic_vector<Type, Size>& v) {
         for (int i=0; i<Size; i++) {
             _array[i] -= v[i];
         }
+        return *this;
     }
     
     

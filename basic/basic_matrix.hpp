@@ -19,6 +19,9 @@ class basic_matrix {
     
     friend void TEST_BASIC_MATRIX() {
         basic_matrix<int, 10, 10> m(1);
+        basic_matrix<int, 10, 10> n(-1);
+        
+        m += n;
         
         for (int i=0; i<Row; i++) {
             for (int j=0; j<Col; j++)
@@ -35,6 +38,22 @@ public:
     }
     
     const basic_vector<Type, Col>& operator[](int i) const { return _vectors[i]; }
+    
+    const basic_matrix<Type, Row, Col>& operator+=(const basic_matrix<Type, Row, Col>& m) {
+        for (int i=0; i<Row; i++) {
+            _vectors[i] += m[i];
+        }
+        
+        return *this;
+    }
+    
+    const basic_matrix<Type, Row, Col>& operator-=(const basic_matrix<Type, Row, Col>& m) {
+        for (int i=0; i<Row; i++) {
+            _vectors[i] -= m[i];
+        }
+        
+        return *this;
+    }
     
 private:
     basic_vector<Type, Col> _vectors[Row];
